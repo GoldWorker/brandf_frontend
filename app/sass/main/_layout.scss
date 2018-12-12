@@ -1,0 +1,7 @@
+.hint-box-nor{
+    @extend .shadow;
+    @include bor-r();
+    @include box_sizing();
+    padding: 12px 8px 12px 8px;
+    border-left: solid 2px;
+}

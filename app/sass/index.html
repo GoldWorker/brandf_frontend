@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>slucky</title>
+    <link rel="stylesheet" href="../../build/slucky.css">
+</head>
+<style>
+/*@font-face {
+    font-family: noto;
+    src: url('./font/NotoSansPhagsPa-Regular.ttf');
+}
+
+body {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    background-color: rgba(236, 239, 241, 1);
+    font: normal 100%/1.4 noto;
+    font-size: 14px;
+    color: #2c3e50;
+}*/
+</style>
+
+<body>
+    <div class="d-n">
+        <svg>
+            <symbol id="icon-test" viewBox="0 0 16 16">
+                <title>test</title>
+                <path class="path1" d="M16 9.226l-8-6.21-8 6.21v-2.532l8-6.21 8 6.21zM14 9v6h-4v-4h-4v4h-4v-6l6-4.5z"></path>
+            </symbol>
+        </svg>
+    </div>
+    <!-- comment -->
+    <div class="publish-comment-box m16">
+        <p class="pl8 bor-l b-blue">评论</p>
+        <textarea name="" id="" class="publish-comment-input textarea" placeholder="输入内容。。。。。。"></textarea>
+        <div class="publish-comment-tool bg-divider-b">
+            <div class="ta-r">
+                <button class="publish-btn btn btn-normal bg-blue c-text-w">发表</button>
+            </div>
+        </div>
+    </div>
+    <div class="comment-normalize-box">
+        <figure class="user-info-comment">
+            <img src="./images/bg_test.jpg" alt="" class="img-rounded-s bg-tran">
+            <figcaption class="ta-c">Test asd qwe</figcaption>
+        </figure>
+        <div class="comment-content mr16">
+            <p>asdasdasd</p>
+            <ul class="reply-normalize-box bg-divider-b">
+                <li>
+                    <span class="user-info-reply">A</span>:
+                    <span class="reply-content">hello</span>
+                </li>
+                <li>
+                    <span class="user-info-reply">B</span>:
+                    <span class="reply-content">world</span>
+                </li>
+            </ul>
+            <div class="ta-r c-blue">
+                <label for="comment-toggle" class="btn btn-tp">回复</label>
+            </div>
+            <input type="checkbox" id="comment-toggle" class="single-toggle">
+            <div class="single-toggle-target">
+                <div class="publish-comment-box m16">
+                    <textarea name="" id="" class="publish-comment-input textarea" placeholder="输入内容。。。。。。"></textarea>
+                    <div class="publish-comment-tool bg-divider-b">
+                        <div>
+                            <label for="comment-toggle" class="btn btn-normal bg-grey c-text-w publish-close">关闭</label>
+                        </div>
+                        <div class="ta-r">
+                            <button class="publish-btn btn btn-normal bg-blue c-text-w">回复</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- toastlists -->
+    <div class="toastlists-normalize-box">
+        <div class="toastlist">
+            <div class="shadow">
+                <div class="bg-blue">Hint:how your are so petty</div>
+            </div>
+        </div>
+        <div class="toastlist">
+            <div class="shadow">
+                <div class="bg-blue">Hint:how your are so</div>
+            </div>
+        </div>
+        <div class="toastlist">
+            <div class="shadow">
+                <div class="bg-blue">Hint:how your are so petty</div>
+            </div>
+        </div>
+    </div>
+    <!-- button -->
+    <div>
+        <button class="btn btn-s">Button-s</button>
+        <button class="btn btn-m">Button-m</button>
+        <button class="btn btn-l">Button-l</button>
+        <button class="btn btn-tp">Button-l</button>
+        <button class="btn btn-m btn-hollow ">btn-hollow</button>
+        <button class="btn-round-s">
+            <svg class="icon icon-test">
+                <use xlink:href="#icon-test"></use>
+            </svg>
+        </button>
+        <button class="btn-round-m">
+            <svg class="icon icon-test">
+                <use xlink:href="#icon-test"></use>
+            </svg>
+        </button>
+        <div class="d-il w144">
+            <button class="btn btn-full">btn-full</button>
+        </div>
+        <button class="btn btn-m btn-gif-wait">购买</button>
+        <button class="btn btn-m btn-gif-bingo"></button>
+        <div class="btn-group">
+            <button class="btn btn-m">1</button>
+            <button class="btn btn-m">2</button>
+            <button class="btn btn-m">3</button>
+            <button class="btn btn-m">...</button>
+            <button class="btn btn-m">></button>
+        </div>
+    </div>
+    <!-- img -->
+    <div>
+        <img src="./images/bg_test.jpg" alt="" class="img-rounded bg-tran">
+        <img src="./images/bg_test.jpg" alt="" class="img-circle bg-tran">
+        <img src="./images/bg_test.jpg" alt="" class="img-thumbnail">
+    </div>
+    <!-- input -->
+    <div>
+        <p>Normalize</p>
+        <div class="checkbox-box-normalize">
+            <input id="checkbox_normalize" type="checkbox" name="c_n">
+            <span class="checkbox-hook ta-c"><span class="checkbox-hook-in fs12 op0 lh0">✓</span></span>
+            <label for="checkbox_normalize" class="p-r z10">复选框A</label>
+        </div>
+        <div class="checkbox-box-normalize">
+            <input id="checkbox_normalize1" type="checkbox" name="c_n1">
+            <span class="checkbox-hook ta-c"><span class="checkbox-hook-in fs12 op0 lh0">✓</span></span>
+            <label for="checkbox_normalize1" class="p-r z10">B</label>
+        </div>
+        <!-- imgstyle -->
+        <p>imgstyle</p>
+        <div class="checkbox-box-imgstyle mt16">
+            <input id="c_i" type="checkbox" name="c_i" class="d-n">
+            <label for="c_i" class="checkbox-imgstyle">
+                <img src="./images/bg_test.jpg" alt="">
+                <p class="m0">Title</p>
+                <div class="checkbox-mark"><span>✓</span></div>
+            </label>
+        </div>
+        <!-- papertoggle -->
+        <p>papertoggle</p>
+        <div class="checkbox-box-papertoggle w288 shadow">
+            <input id="isSelectPackage" type="checkbox" class="d-n">
+            <label for="isSelectPackage" class="checkbox-papertoggle flex-box">
+                <div class="checkbox-imgbox">
+                    <img src="./images/bg_test.jpg" alt="">
+                </div>
+                <div class="flex1 lh16 pl16">
+                    <p class="bor-b b-divider-b pb8 mb8">
+                        TEST
+                        <svg class="icon f-r">
+                            <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                    </p>
+                    <span class="c-hint-b fs12">亲子实惠，难得一夏。</span>
+                </div>
+                <div class="checkbox-mark">
+                    <span>✓</span>
+                    <p>已选择</p>
+                </div>
+            </label>
+        </div>
+        <!-- switch-normalize -->
+        <p>switch-normalize</p>
+        <div class="switch-box-normalize">
+            <label for="switch-input" class="switch-mark-click"></label>
+            <input type="checkbox" value="1" id="switch-input">
+            <div>
+                <i class="switch-move"></i>
+                <span class="switch-horizon"></span>
+            </div>
+        </div>
+        <!-- radio -->
+        <p>radio-normalize</p>
+        <div class="radio-box-normalize">
+            <input id="isManagerPlant1" type="radio" name="managerPlant" class="d-n">
+            <div class="radio-out">
+                <i class="radio-in"></i>
+            </div>
+            <label for="isManagerPlant1">next</label>
+        </div>
+        <div class="radio-box-normalize">
+            <input id="isManagerPlant2" type="radio" name="managerPlant" class="d-n">
+            <div class="radio-out">
+                <i class="radio-in"></i>
+            </div>
+            <label for="isManagerPlant2">cancel</label>
+        </div>
+        <p>count</p>
+        <div class="input-count">
+            <div class="reduce c-cyan b-cyan">
+                <!-- <span>-</span> -->
+                <button>-</button>
+            </div>
+            <input type="text" value="0" id="adult" class="man-num">
+            <div class="plus c-cyan b-cyan">
+                <!-- <span>+</span> -->
+                <button>+</button>
+            </div>
+        </div>
+        <p>select</p>
+        <div class="select-box-normalize">
+            <i class="select-tri-t tri-t"></i>
+            <i class="select-tri-b tri-b"></i>
+            <label for="select" class="select-in"></label>
+            <select name="" id="select">
+                <option value="">qasd</option>
+                <option value="">qasd</option>
+            </select>
+        </div>
+        <p>textarea</p>
+        <textarea name="" id="" cols="30" rows="10" class="textarea"></textarea>
+        <p>range</p>
+        <div class="range-box-mater">
+            <input type="range" class="w144" value="0" max="2" />
+        </div>
+        <div class="range-box-ios">
+            <input type="range" class="w144" value="0" max="2" />
+        </div>
+        <!-- form -->
+        <p>Form</p>
+        <input type="text" name="user_name" id="user_name" class="input input-normal" maxlength="15" placeholder="输入你的姓名" autofocus required oninvalid="setCustomValidity('不能为空喔')" oninput="setCustomValidity('')">
+        <input type="text" name="user_name" id="user_name" class="input-s input-normal" maxlength="15" placeholder="输入你的姓名" autofocus required oninvalid="setCustomValidity('不能为空喔')" oninput="setCustomValidity('')">
+        <div class="input pt8">
+            <label for="" class="fs12 c-grey">Name:</label>
+            <br/>
+            <input type="text" class="input-down" placeholder="Input your name" maxlength="15" required oninvalid="setCustomValidity('不能为空喔')" oninput="setCustomValidity('')">
+            <br/>
+            <span class="input-ps fs12">hint!</span>
+        </div>
+        <div class="fileup-container">
+            <div class="fileup">
+                <label for="input-file" class="fileup-in btn btn-m c-text-w bg-orange">点击选择</label>
+                <input type="file" id="input-file">
+            </div>
+            <img src="" alt="">
+        </div>
+        <div class="search-box-normalize">
+            <input type="text" class="input input-normal">
+            <button class="btn btn-m bg-blue c-text-w">搜索</button>
+        </div>
+    </div>
+    <!-- nav -->
+    <nav class="nav shadow bg-blue c-text-w">
+        <li class="nav-flag">
+            <a href="#">asd</a>
+            <svg class="icon icon-test">
+                <use xlink:href="#icon-test"></use>
+            </svg>
+            <ul class="paper menu">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+            </ul>
+        </li>
+        <li class="nav-flag">
+            <a href="#">dddddd</a>
+            <svg class="icon icon-test">
+                <use xlink:href="#icon-test"></use>
+            </svg>
+            <ul class="paper menu">
+                <li class="menu-flag">
+                    <a href="#">zxcxzc</a>
+                    <ul class="paper menu">
+                        <li class="menu-flag">
+                            <a href="#">zxcxzc</a>
+                            <ul class="paper menu">
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">qwf</a></li>
+                        <li><a href="#">cvvf</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">qwf</a></li>
+                <li><a href="#">cvvf</a></li>
+            </ul>
+        </li>
+        <li><a href="#">zxcxzc</a></li>
+        <li><a href="#">qwf</a></li>
+        <li class="nav-flag">
+            <a href="#">cvvf</a>
+            <svg class="icon icon-test">
+                <use xlink:href="#icon-test"></use>
+            </svg>
+            <ul class="paper menu">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+            </ul>
+        </li>
+        <li class="nav-flag">
+            <a href="#">关于</a>
+            <svg class="icon icon-test">
+                <use xlink:href="#icon-test"></use>
+            </svg>
+            <ul class="paper menu">
+                <li class="menu-flag">
+                    <a href="#">联系方式</a>
+                    <ul class="paper menu">
+                        <li class="menu-flag">
+                            <a href="#">啊发顺丰cxzc</a>
+                            <ul class="paper menu">
+                                <li><a href="#">发挥</a></li>
+                                <li><a href="#">其味无穷</a></li>
+                                <li><a href="#">阿斯顿法国</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">自行车</a></li>
+                        <li><a href="#">初步</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">qwf</a></li>
+                <li><a href="#">cvvf</a></li>
+            </ul>
+        </li>
+    </nav>
+    <!-- menu -->
+    <div>
+        <ul class="paper menu m16">
+            <li class="menu-flag">
+                <a href="#">安徽</a>
+                <ul class="paper menu">
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                </ul>
+            </li>
+            <li class="menu-flag">
+                <a href="#">秦莞尔</a>
+                <ul class="paper menu">
+                    <li class="menu-flag">
+                        <a href="#">春风十里</a>
+                        <ul class="paper menu">
+                            <li class="menu-flag">
+                                <a href="#">十里桃花</a>
+                                <ul class="paper menu">
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">暗色</a></li>
+                            <li><a href="#">朝歌</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">长安城</a></li>
+                    <li><a href="#">南海郡</a></li>
+                </ul>
+            </li>
+            <li><a href="#">让他有意义</a></li>
+            <li><a href="#">培养台湾</a></li>
+            <li class="menu-flag">
+                <a href="#">大富大贵</a>
+                <ul class="paper menu">
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- slidebar -->
+    <div class="slidebar-box-normalize">
+        <input type="checkbox" id="slidebar-switch" class="d-n">
+        <div class="slidebar bg-purple">
+            <label for="slidebar-switch" class="slidebar-tool lh56 plr16">
+                <span class="mr16">返回</span>
+                <svg class="icon icon16" id="slidebar_in">
+                    <use xlink:href="#icon-test"></use>
+                </svg>
+                <div id="slidebar_out">
+                    <svg class="icon icon16" id="slidebar_out">
+                        <use xlink:href="#icon-test"></use>
+                    </svg>
+                </div>
+            </label>
+            <details class="slide-down">
+                <summary class="pl16 c-text-w">农场管理员</summary>
+                <ul class="menu">
+                    <li><a>发布土地</a></li>
+                    <li><a>发布种子方案</a></li>
+                    <li><a>发布服务包</a></li>
+                </ul>
+            </details>
+            <ul class="menu">
+                <li><a>发布土地</a></li>
+                <li><a>发布种子方案</a></li>
+                <li><a>发布服务包</a></li>
+            </ul>
+        </div>
+        <div class="mark-b"></div>
+    </div>
+    <!-- tab -->
+    <div>
+        <div class="tab-box-normalize shadow w288 h198">
+            <div class="tab-contrl">
+                <label for="tab_1">
+                    <div class="tab-container">
+                        <input type="radio" id="tab_1" name="tab" checked>
+                        <div class="tab-toggle">
+                            <div class="tab-decoration"><span>1</span></div>
+                            <div class="tab-content w288">1</div>
+                        </div>
+                    </div>
+                </label>
+                <label for="tab_2">
+                    <div class="tab-container">
+                        <input type="radio" id="tab_2" name="tab">
+                        <div class="tab-toggle">
+                            <div class="tab-decoration"><span>2</span></div>
+                            <div class="tab-content w288">2</div>
+                        </div>
+                    </div>
+                </label>
+                <label for="tab_3">
+                    <div class="tab-container">
+                        <input type="radio" id="tab_3" name="tab">
+                        <div class="tab-toggle">
+                            <div class="tab-decoration"><span>3</span></div>
+                            <div class="tab-content w288">3</div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+    <!-- 3dtransform -->
+    <section class="t3d-container">
+        <input type="radio" id="card_front" name="card-ctrl" checked>
+        <div class="card-select-box">
+            <label class="card-select" for="card_front">front</label>
+            <label class="card-select" for="card_back">back</label>
+        </div>
+        <input type="radio" id="card_back" name="card-ctrl" class="card-ischecked">
+        <div id="card">
+            <figure class="front" id="front"><img src="./images/bg_test.jpg" alt=""></figure>
+            <figure class="back" id="back"><img src="./images/bg_test.jpg" alt=""></figure>
+        </div>
+    </section>
+    <!-- hint-box -->
+    <div class="hint-box-nor b-blue m16">
+        <strong class="c-blue">BOX</strong>
+        <p>在 HTML5 中可以放心使用</p>
+    </div>
+    <!-- font -->
+    <!-- color -->
+    <div class="ta-c lh56">
+        <div class="circle-l bg-blue">
+            <span>#3498db</span>
+        </div>
+        <div class="circle-l bg-blue-d">
+            <span>#2980b9</span>
+        </div>
+        <div class="circle-l bg-cyan">
+            <span>#1abc9c</span>
+        </div>
+        <div class="circle-l bg-cyan-d">
+            <span>#16a085</span>
+        </div>
+        <div class="circle-l bg-green">
+            <span>#1fcc7b</span>
+        </div>
+        <div class="circle-l bg-green-d">
+            <span>#27ae60</span>
+        </div>
+        <div class="circle-l bg-purple">
+            <span>#9b59b6</span>
+        </div>
+        <div class="circle-l bg-purple-d">
+            <span>#8e44ad</span>
+        </div>
+        <div class="circle-l bg-black">
+            <span>#34495e</span>
+        </div>
+        <div class="circle-l bg-black-d">
+            <span>#2c3e50</span>
+        </div>
+        <div class="circle-l bg-yellow">
+            <span>#f1c40f</span>
+        </div>
+        <div class="circle-l bg-yellow-d">
+            <span>#f39c12</span>
+        </div>
+        <div class="circle-l bg-orange">
+            <span>#ffa404</span>
+        </div>
+        <div class="circle-l bg-orange-d">
+            <span>#d35400</span>
+        </div>
+        <div class="circle-l bg-red">
+            <span>#e74c3c</span>
+        </div>
+        <div class="circle-l bg-red-d">
+            <span>#c0392b</span>
+        </div>
+        <div class="circle-l bg-pink">
+            <span>#e91e63</span>
+        </div>
+        <div class="circle-l bg-white">
+            <span>#ecf0f1</span>
+        </div>
+        <div class="circle-l bg-white-d">
+            <span>#bdc3c7</span>
+        </div>
+        <div class="circle-l bg-grey">
+            <span>#95a5a6</span>
+        </div>
+        <div class="circle-l bg-grey-d">
+            <span>#7f8c8d</span>
+        </div>
+        <div class="circle-l bg-base">
+            <span>#f1f1f1</span>
+        </div>
+        <div class="circle-l bg-tran">
+            <span>#dddddd</span>
+        </div>
+        <div class="circle-l bg-tp">
+            <span>transparespant</span>
+        </div>
+        <div class="circle-l bg-w">
+            <span>#fff</span>
+        </div>
+    </div>
+
+</html>
